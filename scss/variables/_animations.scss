@@ -1,0 +1,41 @@
+@keyframes hover-navlinks {
+    0% {
+        left: 50%;
+        width: 0%;
+    }
+    100% {
+        left: 15%;
+        width: 70%;
+    }
+}
+$hover-navlinks: hover-navlinks 0.3s ease-out forwards;
+
+@keyframes hover-contact {
+    0% {
+        color: $header-contact;
+    }
+    100% {
+        color: $header-contact-hover;
+    }
+}
+$hover-contact: hover-contact 0.25s ease forwards;
+
+@keyframes hover-learn-more {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -2%;
+    }
+}
+$hover-learn-more: hover-learn-more 0.2s ease-out forwards;
+
+@keyframes hover-learn-more-after {
+    0% {
+        left: -2%;
+    }
+    100% {
+        left: 12%;
+    }
+}
+$hover-learn-more-after: hover-learn-more-after 0.2s ease-out forwards;

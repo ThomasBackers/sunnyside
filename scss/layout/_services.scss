@@ -15,8 +15,8 @@
             }
             h1, a {
                 font-family: $heading-font;
-                color: $services-headings-color;
-                font-weight: $bolder-fraunces-value;
+                color: $services-headings;
+                font-weight: $bolder-fraunces;
             }
             h1 {
                 font-size: 2.5rem;
@@ -24,7 +24,7 @@
                 padding-bottom: 2rem;
             }
             p {
-                color: $services-text-color;
+                color: $services-text;
                 line-height: 1.7rem;
                 padding-bottom: 3.1rem;
             }
@@ -42,6 +42,12 @@
                     left: -2%;
                     bottom: -5px;
                     z-index: -1;
+                }
+                &:hover {
+                    animation: $hover-learn-more;
+                }
+                &:hover::after {
+                    animation: $hover-learn-more-after;
                 }
             }
             &:nth-child(4) {
