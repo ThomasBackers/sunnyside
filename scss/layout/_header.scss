@@ -4,24 +4,72 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 2.9rem 2.5rem;
+        padding: 2.9rem 4rem 0 2.5rem;
         img {
             width: 137%;
         }
         ul {
             display: flex;
+            position: relative;
+            bottom: 1rem;
             li {
-                display: flex;
+                margin-right: 1.5rem;
                 a {
                     margin: auto;
+                    display: flex;
                     color: $header-font-color;
                     width: 100%;
                     height: 100%;
+                    padding: 0.6rem 0.75rem;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 0;
+                        height: 2px;
+                        background-color: $header-font-color;
+                        bottom: 5px;
+                        left: 15%;
+                        border-radius: 5px;
+                    }
+                    &:hover::after {
+                        width: 70%;
+                    }
+                    p {
+                        margin: auto;
+                    }
                 }
                 &:last-child {
-                    font-family: $heading-font;
+                    a {
+                        font-family: $heading-font;
+                        color: black;
+                        background-color: $header-font-color;
+                        border-radius: 30px;
+                        font-size: 0.95rem;
+                        margin-left: 1rem;
+                        &:hover::after {
+                            width: 0;
+                        }
+                    }
                 }
             }
+        }
+    }
+    h1 {
+        font-family: $heading-font;
+        color: $header-font-color;
+        font-weight: 900;
+        font-size: 3.5rem;
+        letter-spacing: 0.6rem;
+        text-align: center;
+        padding-top: 7.3rem;
+        padding-bottom: 6.3rem;
+    }
+    div {
+        display: flex;
+        padding-bottom: 20.5rem;
+        a {
+            margin: 0 auto;
         }
     }
 }
