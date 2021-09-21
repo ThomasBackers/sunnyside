@@ -1,0 +1,14 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    font-family: $body-font;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+header {
+    background: url("../img/photos/image-header.jpg") no-repeat center;
+    background-size: cover;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.9rem 2.5rem;
+        img {
+            width: 137%;
+        }
+        ul {
+            display: flex;
+            li {
+                display: flex;
+                a {
+                    margin: auto;
+                    color: $header-font-color;
+                    width: 100%;
+                    height: 100%;
+                }
+                &:last-child {
+                    font-family: $heading-font;
+                }
+            }
+        }
+    }
+}
