@@ -10,7 +10,7 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
-#contents {
+#body-contents {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -39,7 +39,7 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  bottom: 1rem;
+  bottom: 0.8rem;
 }
 
 header nav ul li {
@@ -51,7 +51,7 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
+  color: white;
   width: 100%;
   height: 100%;
   padding: 0.6rem 0.75rem;
@@ -63,7 +63,7 @@ header nav ul li a::after {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: white;
   bottom: 5px;
   left: 15%;
   border-radius: 5px;
@@ -80,7 +80,7 @@ header nav ul li a p {
 header nav ul li:last-child a {
   font-family: "Fraunces", serif;
   color: black;
-  background-color: #fff;
+  background-color: white;
   border-radius: 30px;
   font-size: 0.95rem;
   margin-left: 1rem;
@@ -92,7 +92,7 @@ header nav ul li:last-child a:hover::after {
 
 header h1 {
   font-family: "Fraunces", serif;
-  color: #fff;
+  color: white;
   font-weight: 900;
   font-size: 3.5rem;
   letter-spacing: 0.6rem;
@@ -110,4 +110,84 @@ header div {
 
 header div a {
   margin: 0 auto;
+}
+
+#services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#services article, #services figure {
+  width: 50%;
+}
+
+#services article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 9.8rem 0;
+}
+
+#services article:nth-child(1) .contents, #services article:nth-child(4) .contents {
+  margin: 0 auto;
+  width: 29rem;
+}
+
+#services article:nth-child(1) h1, #services article:nth-child(1) a, #services article:nth-child(4) h1, #services article:nth-child(4) a {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-weight: 900;
+}
+
+#services article:nth-child(1) h1, #services article:nth-child(4) h1 {
+  font-size: 2.5rem;
+  line-height: 3.05rem;
+  padding-bottom: 2rem;
+}
+
+#services article:nth-child(1) p, #services article:nth-child(4) p {
+  color: #818498;
+  line-height: 1.7rem;
+  padding-bottom: 3.1rem;
+}
+
+#services article:nth-child(1) a, #services article:nth-child(4) a {
+  font-size: 1rem;
+  padding-left: 0.4rem;
+  position: relative;
+}
+
+#services article:nth-child(1) a::after, #services article:nth-child(4) a::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 10px;
+  background-color: #fff3ad;
+  border-radius: 5px;
+  left: -2%;
+  bottom: -5px;
+  z-index: -1;
+}
+
+#services article:nth-child(1):nth-child(4) a::after, #services article:nth-child(4):nth-child(4) a::after {
+  background-color: #ffe0db;
+}
+
+#services figure {
+  background-size: cover;
+}
+
+#services figure:nth-child(2) {
+  background: url("../img/photos/image-transform.jpg") no-repeat center;
+}
+
+#services figure:nth-child(3) {
+  background: url("../img/photos/image-stand-out.jpg") no-repeat center;
 }

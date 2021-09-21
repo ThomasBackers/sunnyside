@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     article, figure {
         width: 50%;
-        background-size: cover;
     }
     article {
         display: flex;
@@ -12,7 +11,7 @@
         &:nth-child(1), &:nth-child(4) {
             .contents {
                 margin: 0 auto;
-                width: 28rem;
+                width: 29rem;
             }
             h1, a {
                 font-family: $heading-font;
@@ -21,15 +20,42 @@
             }
             h1 {
                 font-size: 2.5rem;
-                line-height: 3rem;
+                line-height: 3.05rem;
+                padding-bottom: 2rem;
             }
             p {
                 color: $services-text-color;
-                line-height: 1.5rem;
+                line-height: 1.7rem;
+                padding-bottom: 3.1rem;
+            }
+            a {
+                font-size: 1rem;
+                padding-left: 0.4rem;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 110%;
+                    height: 10px;
+                    background-color: lighten($article-link-underline-1, 35%);
+                    border-radius: 5px;
+                    left: -2%;
+                    bottom: -5px;
+                    z-index: -1;
+                }
+            }
+            &:nth-child(4) {
+                
+                a {
+                    &::after {
+                        background-color: lighten($article-link-underline-2, 23%);
+                    }
+                }
             }
         }
     }
     figure {
+        background-size: cover;
         &:nth-child(2) {
             background: url("../img/photos/image-transform.jpg") no-repeat center;
         }
