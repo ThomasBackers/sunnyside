@@ -42,3 +42,18 @@
         }
     }
 }
+
+@media all and (max-width: 1200px) {
+    #testimonials {
+        .commentaries {
+            flex-direction: column;
+            width: 100%;
+            article {
+                margin: 0 auto;
+                &:nth-child(1), &:nth-child(2) {
+                    padding-bottom: 8rem;
+                }
+            }
+        }
+    }
+}

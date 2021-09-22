@@ -355,6 +355,24 @@ header div a {
   background: url("../img/photos/image-stand-out.jpg") no-repeat center;
 }
 
+@media all and (max-width: 1200px) {
+  #services article:nth-child(1), #services article:nth-child(4) {
+    width: 100%;
+  }
+  #services figure {
+    height: 37.025rem;
+  }
+}
+
+@media all and (max-width: 715px) {
+  #services article:nth-child(5), #services article:nth-child(6) {
+    width: 100%;
+  }
+  #services figure {
+    height: 20rem;
+  }
+}
+
 #testimonials {
   padding: 10.5rem 0;
 }
@@ -416,6 +434,22 @@ header div a {
   font-size: 0.95rem;
 }
 
+@media all and (max-width: 1200px) {
+  #testimonials .commentaries {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #testimonials .commentaries article {
+    margin: 0 auto;
+  }
+  #testimonials .commentaries article:nth-child(1), #testimonials .commentaries article:nth-child(2) {
+    padding-bottom: 8rem;
+  }
+}
+
 .figures-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,7 +458,7 @@ header div a {
 
 .figures-row img {
   width: 25%;
-  height: 447px;
+  height: 5%;
 }
 
 footer {
