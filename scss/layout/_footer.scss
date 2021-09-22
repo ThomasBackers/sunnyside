@@ -1,0 +1,29 @@
+footer {
+    background-color: $footer-background;
+    display: flex;
+    padding: 4.2rem 0;
+    .contents {
+        margin: 0 auto;
+        width: 19.2rem;
+        text-align: center;
+    }
+    .footer-logo {
+        width: 10.617rem;
+        filter: invert(61%) sepia(38%) saturate(546%) hue-rotate(118deg) brightness(92%) contrast(96%);
+        padding-bottom: 2.8rem;
+    }
+    nav {
+        padding-bottom: 5.5rem;
+        a {
+            color: $footer-font;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(3) {
+            width: 10.617rem;
+            margin: 0 auto;
+        }
+    }
+}

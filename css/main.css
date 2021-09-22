@@ -106,7 +106,7 @@ header nav {
 }
 
 header nav img {
-  width: 137%;
+  width: 10.617rem;
 }
 
 header nav ul {
@@ -399,4 +399,47 @@ header div a {
 .figures-row img {
   width: 25%;
   height: 447px;
+}
+
+footer {
+  background-color: #91d4c6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4.2rem 0;
+}
+
+footer .contents {
+  margin: 0 auto;
+  width: 19.2rem;
+  text-align: center;
+}
+
+footer .footer-logo {
+  width: 10.617rem;
+  -webkit-filter: invert(61%) sepia(38%) saturate(546%) hue-rotate(118deg) brightness(92%) contrast(96%);
+          filter: invert(61%) sepia(38%) saturate(546%) hue-rotate(118deg) brightness(92%) contrast(96%);
+  padding-bottom: 2.8rem;
+}
+
+footer nav {
+  padding-bottom: 5.5rem;
+}
+
+footer nav a {
+  color: #2d7668;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul:nth-child(3) {
+  width: 10.617rem;
+  margin: 0 auto;
 }
