@@ -389,3 +389,14 @@ header div a {
   color: #a7abae;
   font-size: 0.95rem;
 }
+
+.figures-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.figures-row img {
+  width: 25%;
+  height: 447px;
+}
