@@ -129,6 +129,17 @@
 @media all and (max-width: 715px) {
     #services {
         article {
+            &:nth-child(1), &:nth-child(4) {
+                .contents {
+                    width: 15rem;
+                    left: 0;
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        article {
             &:nth-child(5), &:nth-child(6) {
                 width: 100%;
             }

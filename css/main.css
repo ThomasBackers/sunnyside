@@ -123,6 +123,10 @@ header nav {
   padding: 2.9rem 4rem 0 2.5rem;
 }
 
+header nav #hamburger {
+  display: none;
+}
+
 header nav img {
   width: 10.617rem;
 }
@@ -209,6 +213,21 @@ header div {
 
 header div a {
   margin: 0 auto;
+}
+
+@media all and (max-width: 715px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header nav #hamburger {
+    display: inline-block;
+  }
+  header nav #hamburger img {
+    width: 2rem;
+  }
+  header nav ul {
+    display: none;
+  }
 }
 
 #services {
@@ -365,6 +384,13 @@ header div a {
 }
 
 @media all and (max-width: 715px) {
+  #services article:nth-child(1) .contents, #services article:nth-child(4) .contents {
+    width: 15rem;
+    left: 0;
+  }
+  #services article:nth-child(1) .contents h1, #services article:nth-child(4) .contents h1 {
+    font-size: 2rem;
+  }
   #services article:nth-child(5), #services article:nth-child(6) {
     width: 100%;
   }

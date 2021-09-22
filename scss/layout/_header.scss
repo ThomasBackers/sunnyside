@@ -5,6 +5,9 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 2.9rem 4rem 0 2.5rem;
+        #hamburger {
+            display: none;
+        }
         img {
             width: 10.617rem;
         }
@@ -75,6 +78,25 @@ header {
         padding-bottom: 20.5rem;
         a {
             margin: 0 auto;
+        }
+    }
+}
+
+@media all and (max-width: 715px) {
+    header {
+        h1 {
+            font-size: 2rem;
+        }
+        nav {
+            #hamburger {
+                display: inline-block;
+                img {
+                    width: 2rem;
+                }
+            }
+            ul {
+                display: none;
+            }
         }
     }
 }
