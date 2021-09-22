@@ -39,3 +39,13 @@ $hover-learn-more: hover-learn-more 0.2s ease-out forwards;
     }
 }
 $hover-learn-more-after: hover-learn-more-after 0.2s ease-out forwards;
+
+@keyframes hover-footer-navlinks {
+    0% {
+        color: lighten($footer-font, 7%);
+    }
+    100% {
+        color: $footer-font;
+    }
+}
+$hover-footer-navlinks: hover-footer-navlinks 0.25s ease-out forwards;

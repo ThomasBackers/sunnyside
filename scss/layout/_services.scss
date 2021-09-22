@@ -85,14 +85,20 @@
         }
         &:nth-child(5) {
             background: url("../img/photos/image-graphic-design.jpg") no-repeat center;
-            h1, p {
+            h1 {
                 color: $services-graphic-text;
+            }
+            p {
+                color: lighten($services-graphic-text, 10%);
             }
         }
         &:nth-child(6) {
             background: url("../img/photos/image-photography.jpg") no-repeat center;
-            h1, p {
+            h1 {
                 color: $services-photography-text;
+            }
+            p {
+                color: lighten($services-photography-text, 5%);
             }
         }
     }
