@@ -234,8 +234,8 @@ header div a {
 }
 
 #services article:nth-child(1) p, #services article:nth-child(4) p {
-  color: #818498;
   line-height: 1.7rem;
+  color: #818498;
   padding-bottom: 3.1rem;
 }
 
@@ -269,6 +269,50 @@ header div a {
 
 #services article:nth-child(1):nth-child(4) a::after, #services article:nth-child(4):nth-child(4) a::after {
   background-color: #ffe0db;
+}
+
+#services article:nth-child(5), #services article:nth-child(6) {
+  background-size: cover;
+  height: 37.025rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#services article:nth-child(5) .contents, #services article:nth-child(6) .contents {
+  margin: auto auto 0 auto;
+  width: 21rem;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+
+#services article:nth-child(5) h1, #services article:nth-child(6) h1 {
+  font-family: "Fraunces", serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding-bottom: 2.3rem;
+}
+
+#services article:nth-child(5) p, #services article:nth-child(6) p {
+  line-height: 1.5rem;
+  font-size: 0.97rem;
+}
+
+#services article:nth-child(5) {
+  background: url("../img/photos/image-graphic-design.jpg") no-repeat center;
+}
+
+#services article:nth-child(5) h1, #services article:nth-child(5) p {
+  color: #25564b;
+}
+
+#services article:nth-child(6) {
+  background: url("../img/photos/image-photography.jpg") no-repeat center;
+}
+
+#services article:nth-child(6) h1, #services article:nth-child(6) p {
+  color: #19536b;
 }
 
 #services figure {
